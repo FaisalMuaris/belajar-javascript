@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPERATOR LOGIKA</title>
+  </head>
+  <body>
+    <!-- 
+        (&&) Artinya Dan
+            True && True = TRUE
+            True && False = FALSE
+            False && True = FALSE
+            False && False = FALSE
+        (||) Artinya Atau
+            True || True = TRUE
+            True || False = TRUE
+            False || True = TRUE
+            False || False = FALSE
+        (!) Artinya Kebalikan
+            !True = FALSE
+            !False = TRUE
+     -->
+    <script>
+      const nilaiUjian = 70;
+      const nilaiAbsensi = 77;
+
+      const lulusUjian = nilaiUjian > 75;
+      document.writeln(lulusUjian);
+      const lulusAbsensi = nilaiAbsensi > 75;
+      document.writeln(lulusAbsensi);
+
+      lulus = lulusAbsensi && lulusUjian;
+      document.writeln("<p>" + lulus + "</p>");
+    </script>
+  </body>
+</html>
