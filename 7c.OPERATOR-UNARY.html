@@ -3,29 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OPERATOR ARITMATIKA</title>
+    <title>OPERATOR UNARY</title>
   </head>
   <body>
     <!-- 
-       result = result + 10 menjadi result += 10
-       result = result - 10 menjadi result -= 10
-       result = result * 10 menjadi result *= 10
-       result = result ** 10 menjadi result **= 10
-       result = result / 10 menjadi result /= 10
-       result = result % 10 menjadi result %= 10
+        (+) Mendandakan nilai positif
+        (-) Menandakan nilai negatif
+        (++) Menandakan increment (menaikan 1 angka)
+        (--) Menandakan Decrement (menurunkan 1 angka)
      -->
     <script>
-      let result = 1 + 2;
-      document.writeln("<p> 1 + 2 = " + result + "</p>");
-      let originalResult = result; // 3
+      let result = +1;
+      document.writeln("<p>" + result + "</p>");
 
-      result -= 1; // 2
+      result--; // result = result - 1; result -= 1; hasil= 0
+      document.writeln("<p>" + result + "</p>");
 
-      document.writeln("<p>" + originalResult + " - 1 = " + result + "</p>");
-      originalResult = result; // 2
+      result++; // result = result + 1; result += 1; hasil = 1
+      document.writeln("<p>" + result + "</p>");
 
-      result *= 2; // 4
-      document.writeln("<p>" + originalResult + " * 2 = " + result + "<p>");
+      result = -result; // -1
+      document.writeln("<p>" + result + "</p>");
     </script>
   </body>
 </html>
