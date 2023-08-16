@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KONVERSI STRING DAN NUMBER</title>
+  </head>
+  <body>
+    <!-- 
+    KONVERSI STRING DAN NUMBER
+    parseInt(string) mengkonversi string ke number (bilb ulat)
+    parseFloat(string) mengkonversi string ke number (bilangan pecahan)
+    Number(string) Mengkonversi dari string ke number (bil pecahan atau bil bulat)
+    number.toString() mengkonversi dari number ke String
+    NaN (Not a Number)
+     -->
+    <script>
+      const value1 = parseInt("1");
+      const value2 = 2;
+      const sum = value1 + value2;
+
+      document.writeln(`<p>${sum}</p>`);
+      document.writeln(`<p>${parseInt("1.1")}</p>`);
+      document.writeln(`<p>${parseFloat("1.1")}</p>`);
+      document.writeln(`<p>${Number("1.1")}</p>`);
+
+      const a = 1;
+      const b = 1;
+      const total = a.toString() + b.toString();
+      document.writeln(`<p>${total}</p>`);
+
+      document.writeln(`<p>${parseInt("Salah")}</p>`);
+      document.writeln(`<p>${parseFloat("1.1Salah")}</p>`);
+
+      document.writeln(`<p>${Number("1Salah")}</p>`);
+      document.writeln(`<p>${Number("1.1Salah")}</p>`);
+
+      //   OPERASI PADA NaN
+      //   Jika sudah NaN, tidak akan bisa di operasikan dengan apapun
+
+      const first = Number("salah"); // NaN
+      const last = first + 100;
+      document.writeln(last);
+      //   isNaN() Function
+      document.writeln(`<p>${isNaN(first)}</p>`);
+      document.writeln(`<p>${isNaN(100)}</p>`);
+      document.writeln(`<p>${isNaN(NaN)}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRING TEMPLATE</title>
+  </head>
+  <body>
+    <!-- 
+    
+     -->
+    <script>
+      const name = "Faisal Muaris";
+      const template = `Name : ${name}`;
+
+      document.writeln(template);
+      document.writeln("<br>");
+
+      const nilai = 90;
+      const template2 = `Name : ${name}, Lulus : ${nilai > 70}`;
+
+      document.writeln(template2);
+
+      //   Backtick Multiline
+      const multiline = `
+Hallo, nama saya Faisal Muaris,
+Saya adalah orang yang tidak berbakat,
+Saya hanya orang yang ingin seperti orang lain,
+walaupun itu memang tidak baik untuk saya sendiri,
+menyiksa saya sendiri.
+Tetapi, begitulah cara saya untuk terus bisa bertahan hidup
+      `;
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
+</html>

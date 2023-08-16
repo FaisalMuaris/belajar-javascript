@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KONVERSI STRING DAN NUMBER</title>
+  </head>
+  <body>
+    <!-- 
+        DAFTAR OPERASI DI ARRAY
+        array.push(value)       === Menambahkan data ke Array
+        array.length            === Mendapatkan panjang Array
+        array[index]            === Mendapatkan data sesuai index
+        array[index] = value    === Mengubah data di posisi index
+        delete array[index]     === Menghapus data pada index namun index tidak bergeser
+
+     -->
+    <script>
+      let arrayKosong = [];
+
+      let arrayNama = ["Faisal", "Muaris"];
+
+      //   Menambah Array
+      const nama = [];
+      nama.push("Faisal", "Muaris", "Bisaa", [
+        "Sepakbola",
+        "Bola Volli",
+        "Futsal",
+      ]);
+      nama.push("Manusia", "Tanpa", "Bakat");
+
+      console.table(nama);
+
+      console.info(nama[0]);
+      console.info(nama[1]);
+      console.info(nama[2]);
+
+      nama[0] = "Arif Lukmanul";
+
+      console.table(nama);
+
+      delete nama[2];
+      console.table(nama);
+
+      nama.push("Faisal");
+      console.table(nama);
+    </script>
+  </body>
+</html>
