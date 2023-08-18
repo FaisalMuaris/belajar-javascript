@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPERATOR LOGIKA DI NON BOOLEAN</title>
+  </head>
+  <body>
+    <!-- 
+        Operator OR (||) membaca dari kiri ke kanan
+        Mengambil nilai pertama yang truthy
+        Jika tidak ada satupun yang bernilai truthy, maka yang terakhir yang akan di ambil
+
+        OPERATOR AND (&&) membaca dari kiri ke kanan
+        mengambil nilai pertama yang falsy
+        jika tidak ada satupun yang bernilai falsy, maka yang terakhir yang akan di ambil
+     -->
+
+    <script>
+      console.log("hello" || ""); // hello
+      console.log("" || []); // []
+      console.log("0" || "NULL"); // "0"
+      console.log(0 || "NULL"); // "NULL"
+      console.log(null || "NULL"); // "NULL"
+      console.log(undefined || "undefined"); // "undefined"
+      console.log(false || 0); // 0
+
+      const person = {
+        firstname: "Faisal",
+        lastName: "Muaris",
+      };
+
+      const name = person.firstname || person.lastName;
+      console.log(name);
+
+      console.log("hello" && ""); // ""
+      console.log("" && []); // ""
+      console.log("0" && "NULL"); // "NOL"
+      console.log(0 && "NULL"); // 0
+      console.log(null && "NULL"); // null
+      console.log(undefined && "undefined"); // undefined
+      console.log(false && 0); // false
+    </script>
+  </body>
+</html>

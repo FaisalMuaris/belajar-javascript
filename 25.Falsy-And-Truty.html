@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPERATOR FALSY AND TRUTY</title>
+  </head>
+  <body>
+    <!-- 
+        Data Falsy
+        Data dianggap Falsy              Keterangan           
+        false                              boolean false
+        0, -0                      Number 0, -0 dianggap false
+        "",'', ``                 Semua string kosong dianggap false
+        null                            null dianggap false
+        undefined                       undefined dianggap false
+        NaN                             Not a Number dianggap false
+
+        Data Truthy
+        kebalikan dari data falsy
+     -->
+
+    <script>
+      let data = {};
+
+      if (data) {
+        document.writeln("TRUE");
+      } else {
+        document.writeln("FALSE");
+      }
+    </script>
+  </body>
+</html>
