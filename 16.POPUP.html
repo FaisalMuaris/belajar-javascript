@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POPUP</title>
+  </head>
+  <body>
+    <!-- 
+         ALERT      => MENAMPILKAN POP UP
+         PROMPT     => MENAMPILKAN POP UP DAN MEMINTA INPUT STRING
+         CONFIRM    => MENAMPIKKAN POPUP BOOLEAN ATAU YA / TIDAK 
+     -->
+    <script>
+      // ALERT
+      //   alert("Hello, Faisal Muaris!");
+
+      //   //   PROMPT
+      //   const name = prompt("Masukan nama : ");
+      //   alert(`Hello, ${name}`);
+
+      //   CONFIRM
+      const masuk = confirm("Apa anda yakin akan masuk?");
+      if (masuk) {
+        const name = prompt("Masukan nama : ");
+        alert(`Hello, ${name}!`);
+      } else {
+        alert("bye bye");
+      }
+    </script>
+  </body>
+</html>
