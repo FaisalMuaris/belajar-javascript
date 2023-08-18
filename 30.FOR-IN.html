@@ -7,9 +7,27 @@
   </head>
   <body>
     <!-- 
-
+        For in merupakan perulangan for yang digunakan untuk mengiterasi seluruh data property di object atau index di array
+        Tidak di rekomendasikan untuk ARRAY. ARRAY direkomendasikan menggunakan (For Of)
      -->
 
-    <script></script>
+    <script>
+      const person = {
+        firstName: "Faisal",
+        middleName: "D",
+        lastName: "Muaris",
+      };
+
+      for (const property in person) {
+        document.writeln(`<p>${property} : ${person[property]}</p>`);
+      }
+
+      //   array
+      const names = ["Faisal", "D", "Muaris"];
+
+      for (const index in names) {
+        document.writeln(`<p>${index} : ${names[index]}</>`);
+      }
+    </script>
   </body>
 </html>
