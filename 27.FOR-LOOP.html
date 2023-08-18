@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERULANGAN FOR LOOP</title>
+  </head>
+  <body>
+    <!-- 
+       for (init statement; kondisi; post statement){
+        // block perulangan
+       }
+
+       init statement akan dieksekusi hanya sekali diawal sebelum perulangan
+       jika kondisi true maka perulangan akan di lakukan, jika false perulangan berhenti
+       Post statement akan dieksekusi setiap kali diakhir perulangan
+       init statement, kondisi, post statement tidak wajib diisi, jika tidak diisi, maka kondisi selalu bernilai true
+     -->
+
+    <script>
+      // tanpa kondisi atau terus berulang karena nilai nya true
+      //   for (;;) {
+      //     alert("for loop");
+      //   }
+
+      //   dengan kondisi
+      for (let counter = 1; counter <= 15; counter++) {
+        document.writeln(`<p>Perulangan - ${counter}</p>`);
+      }
+    </script>
+  </body>
+</html>
