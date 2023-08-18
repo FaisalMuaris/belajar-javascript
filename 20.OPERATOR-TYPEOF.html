@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPERATOR TYPEOF</title>
+  </head>
+  <body>
+    <!-- 
+        typeof adalah operator yang bisa digunakan untuk melihat tipe data sebuah value atau variable
+        hasil dari operator typeof adalah tipe data string
+
+        Undefined   menjadi     "undefined"
+        Null        menjadi     "object"
+        Boolean     menjadi     "boolean"
+        Number      menjadi     "number"
+        BigInt      menjadi     "bigint"
+        String      menjadi     "string"
+        Symbol      menjadi     "string"
+        Function    menjadi     "function"
+        Lainnya     menjadi     "object"
+     -->
+    <script>
+      let data = 100;
+
+      const typeData = typeof data;
+      document.writeln(`${typeData}`);
+    </script>
+  </body>
+</html>
