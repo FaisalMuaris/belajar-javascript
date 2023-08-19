@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>With statement</title>
+  </head>
+  <body>
+    <!-- 
+  WIth statement merupakan fitur yang digunakan untuk menurunkan sebuah scope data
+        Kita bisa mengakses property dalam sebuah data tanpa harus menyebut datanya
+     -->
+
+    <script>
+      // Tanpa with statement
+
+      let person = {
+        firstName: "Faisal",
+        middleName: "Muaris",
+        lastName: "Pamungkas",
+      };
+
+      console.log(person.firstName);
+      console.log(person.middleName);
+      console.log(person.lastName);
+
+      //   menggunakan WITH STATEMENT
+
+      with (person) {
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+    </script>
+  </body>
+</html>
