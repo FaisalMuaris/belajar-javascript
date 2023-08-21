@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARROW FUNCTION</title>
+  </head>
+  <body>
+    <!-- 
+        Arrow Function harus menggunakan variable atau di dalam parameter        
+
+     -->
+
+    <script>
+      //   const sayHello = (name) => {
+      //     const say = `Hello ${name}`;
+      //     console.log(say);
+      //   };
+
+      //   sayHello("Faisal");
+
+      //   arrow function bisa tidak menggunakan {} tetapi jika function hanya satu baris
+      //   const sayHello = (name) => console.log(`Hello, ${name}`);
+
+      //   sayHello("Muaris");
+
+      //   menggunakan return
+      //   const sum = (first, second) => {
+      //     return first + second;
+      //   };
+
+      //   tidak menggunakan return
+      const sum = (first, second) => first + second;
+
+      console.log(sum(20, 20));
+
+      //   Arrow Function tanpa kurung parameter
+      const sayHello = (name) => console.log(`Hello, ${name}`);
+
+      //   Arrow Function sebagai parameter
+      function giveMeName(callback) {
+        callback("Faisal");
+      }
+
+      //   Anonymous FUnction
+      //   giveMeName(function (name) {
+      //     console.log(`Hello, ${name}`);
+      //   });
+
+      //   Arrow Function
+      giveMeName((name) => console.log(`Hello, ${name}`));
+    </script>
+  </body>
+</html>
