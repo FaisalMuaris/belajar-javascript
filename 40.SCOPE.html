@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCOPE</title>
+  </head>
+  <body>
+    <!-- 
+        Scope merupakan area akses sebuah data
+        ada 2 jenis scope, GLOBAL SCOPE dan LOCAL SCOPE
+
+     -->
+
+    <script>
+      // Global Scope
+      let counter = 0;
+
+      //   global scope
+      function hitMe() {
+        // local scope hitMe
+        counter++;
+      }
+
+      //   global scope
+      function other() {
+        //local scope other
+      }
+
+      hitMe();
+      hitMe();
+
+      document.writeln(counter);
+
+      function first() {
+        // local scope first
+        let firstVariable = "First";
+
+        function firstNested() {
+          const nestedFunction = "Hallo";
+          console.log(firstVariable);
+        }
+
+        firstNested();
+        console.log(nestedFunction); // ERROR
+      }
+
+      function second() {
+        // local scope second
+        let secondVariable = "Second";
+
+        // console.log(firstVariable); // ERROR
+      }
+
+      first();
+      second();
+
+      //   console.log(firstVariable); //ERROR
+      //   console.log(secondVariable); // ERROR
+    </script>
+  </body>
+</html>
