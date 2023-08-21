@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ANONYMOUS FUNCTION</title>
+  </head>
+  <body>
+    <!-- 
+        FUNCTION TANPA NAMA
+     -->
+
+    <script>
+      let say = function (name) {
+        document.writeln(`<p>Hello, <b>${name}!</b></p>`);
+      };
+
+      say("Muaris");
+
+      function giveMeName(callback) {
+        callback("Muaris");
+      }
+
+      giveMeName(function (name) {
+        document.writeln(`<p>Hi, ${name}</p>`);
+      });
+    </script>
+  </body>
+</html>
