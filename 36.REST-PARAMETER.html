@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST PARAMETER</title>
+  </head>
+  <body>
+    <!-- 
+      Ketentuan rest parameter
+      - didalam function hanya bisa 1 rest parameter
+      - Harus di akhir parameter, kecuali hanya 1 parameter
+     -->
+
+    <script>
+      function sum(name, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+
+        document.writeln(`<p>Total ${name} is ${total}</p>`);
+      }
+
+      sum("Orange", 4, 5, 6, 7, 8, 9, 6);
+      sum("Apple", 4, 5, 6, 7, 8, 9, 6);
+      sum("Banana", 4, 5, 6, 7, 8, 9, 6);
+
+      const values = [10, 10, 10, 10];
+      sum("test", ...values);
+    </script>
+  </body>
+</html>
