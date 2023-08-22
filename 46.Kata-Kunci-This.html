@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KATA KUNCI THIS</title>
+  </head>
+  <body>
+    <!-- 
+       
+     -->
+
+    <script>
+      console.log(this);
+
+      function sample() {
+        console.log(this);
+
+        function inner() {
+          console.log(this);
+        }
+        inner();
+      }
+
+      sample();
+
+      //  Kata Kunci This di Object
+      const person = {
+        name: "Muaris",
+        sayHello: function (name) {
+          console.log(`Hello ${name}. My name is ${this.name}.`);
+        },
+      };
+
+      person.sayHello("Faisal");
+      person.sayHello("Joko");
+    </script>
+  </body>
+</html>
