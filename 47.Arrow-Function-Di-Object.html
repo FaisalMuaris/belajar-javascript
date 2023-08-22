@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function di Object</title>
+  </head>
+  <body>
+    <!-- 
+       
+     -->
+
+    <script>
+      const person = {
+        name: "Faisal",
+        sayHello: (name) => {
+          //   console.log(this); // Mengkases ke WIndow
+          console.log(`Hello ${name}. My name is ${name}`);
+        },
+      };
+
+      person.sayHello("Budi");
+    </script>
+  </body>
+</html>
