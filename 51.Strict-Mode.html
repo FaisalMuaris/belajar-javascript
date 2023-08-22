@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRICT MODE</title>
+  </head>
+  <body>
+    <!-- 
+    
+        Strict Mode adalah mode untuk melihat error yang sudah tidak relevan di javascript
+        untuk melihat apa saja yang tidak bisa di gunakan di mode strict
+        bisa langsung cek
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+        syntax error
+
+     -->
+
+    <script>
+      function useStrictMode() {
+        "use strict";
+        const person = {
+          firstName: "Faisal",
+        };
+
+        // ERROR
+        with (person) {
+          console.log(firstName);
+        }
+      }
+
+      useStrictMode();
+    </script>
+  </body>
+</html>
